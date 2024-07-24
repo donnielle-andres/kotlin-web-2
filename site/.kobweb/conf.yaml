@@ -1,6 +1,6 @@
 site:
   title: "kotlin websample"
-  routePrefix: "kotlin-websample-2"
+  routePrefix: "kotlin-web-2"
 
 server:
   files:
