@@ -47,7 +47,9 @@ private fun NavLink(path: String, text: String) {
 @Composable
 private fun MenuItems() {
     NavLink("/", "Home")
-    NavLink("/about", "About")
+    NavLink("/about", "Deploy")
+    NavLink("https://www.ibm.com/products/instana", "Instana")
+    NavLink("https://ww", "Turbonomic")
 }
 
 @Composable
@@ -102,12 +104,13 @@ fun NavHeader() {
     Row(NavHeaderStyle.toModifier(), verticalAlignment = Alignment.CenterVertically) {
         Link("https://www.ibm.com/products/instana") {
             // Block display overrides inline display of the <img> tag, so it calculates centering better
-            Image("/IBM-instana.png", "Instana Logo", Modifier.height(8.cssRem).display(DisplayStyle.Block))
+            Image("/IBM-instana.png", "Instana Logo", Modifier.height(5.cssRem).display(DisplayStyle.Block))
         }
 
         Spacer()
 
         Row(Modifier.gap(1.5.cssRem).displayIfAtLeast(Breakpoint.MD), verticalAlignment = Alignment.CenterVertically) {
+            MenuItems()
             ColorModeButton()
         }
 
