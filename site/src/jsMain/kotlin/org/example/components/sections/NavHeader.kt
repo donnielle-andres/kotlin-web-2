@@ -47,9 +47,10 @@ private fun NavLink(path: String, text: String) {
 @Composable
 private fun MenuItems() {
     NavLink("/", "Home")
-    NavLink("/about", "Deploy")
+    NavLink("/about", "Deploy App")
     NavLink("https://www.ibm.com/products/instana", "Instana")
     NavLink("https://ww", "Turbonomic")
+    NavLink("https://www.paynamics.com/", "Paynamics")
 }
 
 @Composable
